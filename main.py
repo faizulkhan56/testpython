@@ -26,5 +26,10 @@ def show_subpath(subpath):
     return "Subpath %s" % escape(subpath)
 
 
+@app.route("/health")
+def health():
+    return {"status": "healthy"}, 200
+
+
 if __name__ == "__main__":
     app.run(debug=True)
