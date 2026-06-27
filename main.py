@@ -2,13 +2,12 @@ from flask import Flask
 from markupsafe import escape
 
 app = Flask(__name__)
-
 app_color = "Red"
 
 
 @app.route("/")
 def hello():
-    return "Hello from Production!"
+    return "Welcome to the community!"
 
 
 @app.route("/user/<username>")
